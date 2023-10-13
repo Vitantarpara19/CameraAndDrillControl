@@ -30,7 +30,7 @@ public class CameraAndDrillControl {
         System.out.println("Entering Idle State");
     }
 
-    public void pressButton1Short() {
+    public void pressButton5Sec() {
         switch (currentState) {
             case IDLE:
                 System.out.println("Capture a photo with the color camera.");
@@ -49,7 +49,7 @@ public class CameraAndDrillControl {
         }
     }
 
-    public void pressButton1Long() {
+    public void pressButton10Sec() {
         switch (currentState) {
             case IDLE:
                 System.out.println("Switch to Capture Color Photo State");
@@ -112,15 +112,8 @@ public class CameraAndDrillControl {
     }
     
     public static void main(String[] args) {
-        // TODO code application logic here
-//        CameraAndDrillControl control = new CameraAndDrillControl();
-//
-//        // Simulate button presses
-//        control.pressButton1Short();
-//        control.pressButton1Long();
-//        control.pressButton1Twice();
-//        control.pressButton2();
-System.out.println("Initializing the Camera and Drill Control...");
+
+    System.out.println("Initializing the Camera and Drill Control...");
 
     CameraAndDrillControl control = new CameraAndDrillControl();
 
@@ -128,10 +121,10 @@ System.out.println("Initializing the Camera and Drill Control...");
     
     // Simulate button presses
     System.out.println("Button press: Capture a photo with the color camera.");
-    control.pressButton1Short(); // Capture a photo with the color camera.
+    control.pressButton5Sec(); // Capture a photo with the color camera.
     
     System.out.println("Button press: Switch to Temporizer State");
-    control.pressButton1Long();  // Switch to Temporizer State
+    control.pressButton10Sec();  // Switch to Temporizer State
     
     System.out.println("Button press: Switch to Idle State");
     control.pressButton2();      // Switch to Idle State
@@ -139,10 +132,10 @@ System.out.println("Initializing the Camera and Drill Control...");
     // ... Add more button presses here ...
 
     System.out.println("Button press: Capture a photo with the color camera.");
-    control.pressButton1Short(); // Capture a photo with the color camera.
+    control.pressButton5Sec(); // Capture a photo with the color camera.
 
     System.out.println("Button press: Switch to Temporizer State");
-    control.pressButton1Long();  // Switch to Temporizer State
+    control.pressButton10Sec();  // Switch to Temporizer State
     
     System.out.println("Button press: Switch to Idle State");
     control.pressButton2();      // Switch to Idle State
